@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kompany</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./common.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <button class="button logo">Kompaniy</button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button class="button">
+            <a class="services-a" href="#">Services</a>
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button>UX/UI Design</button>
+            <button>Web Applications</button>
+            <button>SEO Advice</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Products
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button>Learn CSS Ebook</button>
+            <button>Security Course</button>
+            <button>Masterclass Bundle</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Support
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button>About Us</button>
+            <button>Our Contact</button>
+            <button>Send Form</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="landing">
+      <div class="landing-wrapper">
+        <div class="judul"><h1>Our Company Profile</h1></div>
+        <div class="konten-landing">
+          <a
+            >Do elit est mollit nisi veniam ipsum cupidatat sunt. Reprehenderit
+            pariatur amet nulla magna et nostrud nisi aliqua nulla fugiat.
+            Deserunt et aliqua in dolore laborum reprehenderit et sunt laborum
+            sit deserunt ea adipisicing.</a
+          >
+        </div>
+        <div class="btn-wrapper">
+          <a href="#" class="btn-member">Explore More</a>
+        </div>
+      </div>
+      <img
+        class="landing-image"
+        src="./dylan-gillis-KdeqA3aTnBY-unsplash.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="about">
+      <img
+        class="about-image"
+        src="./olena-bohovyk-dIMJWLx1YbE-unsplash.jpg"
+        alt=""
+      />
+      <div class="about-wrapper">
+        <div class="konten-about">
+          <div class="judul-about"><a>About Us</a></div>
+          <div class="subjudul-about"><h1>What is Kompaniy?</h1></div>
+          <div class="konten-about">
+            <a
+              >Amet enim eu mollit ea sit qui pariatur commodo esse id minim.
+              Officia et irure est pariatur quis aliqua et. Mollit nulla mollit
+              amet dolore.Pariatur proident cillum irure velit aliqua. Veniam
+              incididunt mollit incididunt ipsum excepteur anim nostrud amet
+              incididunt labore officia. Sint ea labore eiusmod occaecat.
+              Ullamco esse voluptate fugiat consectetur labore do quis.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="judul-services"><h1>Our Services</h1></div>
+      <div class="services-cards">
+        <div class="services-card-wrapper">
+          <img src="./webdev.jpg" alt="" class="services-image" />
+          <h1>Website Development</h1>
+          <p>
+            Cillum sint id nostrud dolor et magna. Eu sint pariatur excepteur
+            quis officia sunt nisi veniam cillum sit voluptate aliquip.
+          </p>
+        </div>
+
+        <div class="services-card-wrapper">
+          <img src="./cybersec.jpg" alt="" class="services-image" />
+          <h1>Cyber Security</h1>
+          <p>
+            Cillum sint id nostrud dolor et magna. Eu sint pariatur excepteur
+            quis officia sunt nisi veniam cillum sit voluptate aliquip.
+          </p>
+        </div>
+
+        <div class="services-card-wrapper">
+          <img src="./serverhost.jpg" alt="" class="services-image" />
+          <h1>Server Hosting</h1>
+          <p>
+            Cillum sint id nostrud dolor et magna. Eu sint pariatur excepteur
+            quis officia sunt nisi veniam cillum sit voluptate aliquip.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="judul-contact"><h1>Contact Us!</h1></div>
+      <p>
+        Voluptate ea enim irure elit consequat est pariatur labore labore ad id.
+        Labore dolore sit dolore ut. Cillum ipsum voluptate veniam irure
+        reprehenderit.Laboris magna est nisi mollit fugiat occaecat irure duis
+        incididunt do officia ipsum tempor laborum. Nostrud laborum dolor mollit
+        Lorem. Quis aliqua tempor sint minim ullamco elit laboris elit id
+        consectetur dolor incididunt tempor. Ut pariatur non amet elit irure
+        aute ut est. Ipsum ipsum sint exercitation ullamco ullamco nostrud amet
+        fugiat magna minim Lorem id. Eu culpa occaecat excepteur quis Lorem
+        pariatur.
+      </p>
+      <form action="index.php" method="post">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+      </form>
+      <div class="btn-wrapper">
+        <a href="#" class="btn-member">Submit</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2023 Kompaniy. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>
