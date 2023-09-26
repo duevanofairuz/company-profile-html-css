@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kompany</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./common.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <button class="button logo">Kompany</button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button class="button">
+            Services
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button>UX/UI Design</button>
+            <button>Web Applications</button>
+            <button>SEO Advice</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Products
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button>Learn CSS Ebook</button>
+            <button>Security Course</button>
+            <button>Masterclass Bundle</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Support
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <button>Live Chat</button>
+            <button>Send Email</button>
+            <button>Request Help</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="landing">
+      <div class="landing-wrapper">
+        <div class="judul"><h1>Our Company Profile</h1></div>
+        <div class="konten-landing">
+          <a
+            >Do elit est mollit nisi veniam ipsum cupidatat sunt. Reprehenderit
+            pariatur amet nulla magna et nostrud nisi aliqua nulla fugiat.
+            Deserunt et aliqua in dolore laborum reprehenderit et sunt laborum
+            sit deserunt ea adipisicing.</a
+          >
+        </div>
+        <div class="btn-wrapper">
+          <a href="#" class="btn-member">Explore More</a>
+        </div>
+      </div>
+      <img
+        class="landing-image"
+        src="./dylan-gillis-KdeqA3aTnBY-unsplash.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="about">
+      <img
+        class="about-image"
+        src="./olena-bohovyk-dIMJWLx1YbE-unsplash.jpg"
+        alt=""
+      />
+      <div class="about-wrapper">
+        <div class="konten-about">
+          <div class="judul-about"><a>About Us</a></div>
+          <div class="subjudul-about"><h1>What is Kompany?</h1></div>
+          <div class="konten-about">
+            <a
+              >Amet enim eu mollit ea sit qui pariatur commodo esse id minim.
+              Officia et irure est pariatur quis aliqua et. Mollit nulla mollit
+              amet dolore.</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>
